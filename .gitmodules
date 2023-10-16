@@ -1,0 +1,19 @@
+[submodule "repos/meta-raspberypi"]
+	path = repos/meta-raspberypi
+	url = https://github.com/agherzan/meta-raspberrypi.git
+	branch = master
+[submodule "meta-openembedded"]
+	path = repos/meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded.git
+	branch = kirkstone
+[submodule "repos/openembedded-core"]
+	path = repos/openembedded-core
+	url = https://github.com/openembedded/openembedded-core.git
+	branch = kirkstone
+[submodule "repos/meta-ros"]
+	path = repos/meta-ros
+	url = git@github.com:mission-robotics/meta-ros.git
+	branch = iron
+[submodule "repos/poky"]
+	path = repos/poky
+	url = git://git.yoctoproject.org/poky

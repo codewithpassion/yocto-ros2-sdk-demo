@@ -1,0 +1,8 @@
+build*/
+*~
+*.pyc
+*.pyo
+.ssh
+
+downloads/
+sstate-cache/
