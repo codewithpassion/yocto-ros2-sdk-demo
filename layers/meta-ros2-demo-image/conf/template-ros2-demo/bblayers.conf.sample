@@ -1,0 +1,22 @@
+# Version of layers configuration, specific to
+# each defined distro in the repository.
+# Format: ${DISTRO}-<version>
+TD_BBLAYERS_CONF_VERSION = "mr-core-7"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  ##OEROOT##/meta \
+  ##OEROOT##/meta-poky \
+  ##OEROOT##/meta-yocto-bsp \
+  ##OEROOT##/meta-oe \
+  ##OEROOT##/meta-python \
+  ##OEROOT##/meta-networking \
+  ##OEROOT##/meta-filesystems \
+  ##OEROOT##/meta-raspberypi \
+  ##OEROOT##/meta-ros-common \
+  ##OEROOT##/meta-ros2 \
+  ##OEROOT##/meta-ros2-iron \
+  ##OEROOT##/meta-ros2-demo-image \
+  "

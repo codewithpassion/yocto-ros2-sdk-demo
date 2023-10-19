@@ -4,5 +4,6 @@ build*/
 *.pyo
 .ssh
 
+artifacts/
 downloads/
 sstate-cache/

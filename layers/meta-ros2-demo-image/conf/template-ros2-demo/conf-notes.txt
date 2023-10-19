@@ -1,0 +1,5 @@
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+Targets for building Mission Robotics Tegra images:
+    ros2-demo-image     - basic image with no graphics
