@@ -52,3 +52,31 @@ Inside the build container:
 Get all your disk space back:
 
     rm -rf artifacts/*
+
+
+# How did we get here
+
+## ROS2 release
+
+This is based on a proof of concept setup of ROS2 Iron. Iron is not currently officially supported but somehting
+I've been working on recenty.
+
+To get this working with another release, you probably need to add a fair amount of  `.bbappends`. 
+What is needed mainly are:
+
+    BBCLASSEXTEND =+ "native nativesdk"
+    
+Or at least the `nativesdk` part of it. 
+
+## Special recipe for the SDK setup
+
+[layers/meta-ros2-demo-image/recipes-sdk/sdk-support/ros2-demo-image-sdk-support_1.0.0.bb](ros2-demo-image-sdk-support_1.0.0.bb) has a couple of the modifications we need for the SDK. 
+There is a script to setup environment variables when you start the docker container. There is also a `cmake` configuration file setting certain values. 
+
+## Customization in the Docker container
+
+There are some fixes and customizations needed that are done during Docker contaiiner creation.
+These are done in the [Dockerfile](Dockerfile).
+
+
+
